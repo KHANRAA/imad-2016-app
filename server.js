@@ -5,16 +5,16 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-app.get('/article-one', function (req, res) {
-  res.send('Name of akash is requested and will be server here');
+app.get('/name-one', function (req, res) {
+  res.send('Name one is requested and will be served here');
 });
 
-app.get('/article-two', function (req, res) {
-  res.send('Name of akash is send time requested and will be server here');
+app.get('/name-two', function (req, res) {
+  res.send('Name two requested and will be served here');
 });
 
 app.get('/article-three', function (req, res) {
-  res.send('Name of akash is third time requested and will be server here');
+  res.send('Name three is requested and will be served here');
 });
 
 app.get('/', function (req, res) {
